@@ -9,7 +9,6 @@ import sys
 # Seems that only static plotting is supported by colab at the moment
 pv.global_theme.jupyter_backend = 'static'
 pv.global_theme.notebook = True
-#pv.start_xvfb()
 
 # Add parent directory to path if needed
 sys.path.append('..')
@@ -129,7 +128,7 @@ def test_drag_sphere_colab():
         
         # Define seed grid in z = 0 plane, behind the sphere
         xseed = np.linspace(1.1, 1.6, 10)  # Along flow direction
-        yseed = np.linspace(-1.0, 1.0, 20)
+        yseed = np.linspace(-1.0, 1.0, 10)
         zseed = np.linspace(-0.5,0.5,4)
         #yseed = np.array([0.0])
         #zseed = np.array([0.25])  # Single z-plane

@@ -3,7 +3,6 @@
 import pyvista as pv 
 import numpy as np
 from numpy.linalg import cond, solve
-from pyvirtualdisplay import Display
 from math import pi, sqrt
 import sys
 
